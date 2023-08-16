@@ -1,7 +1,7 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 class Todo(BaseModel):
-    name: str
-    description: str
-    complete: bool
+    name: str  = (Field(default=None),)
+    description: str  = (Field(default=None),)
+    complete: bool  = (Field(default=None),)
         

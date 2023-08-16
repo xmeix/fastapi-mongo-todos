@@ -1,8 +1,8 @@
-from pydantic import BaseModel, EmailStr
+from pydantic import BaseModel, EmailStr,Field
 
 class User(BaseModel):
-    name: str
-    email: EmailStr
-    password: bool
+    name: str = (Field(default=None),)
+    email: EmailStr = (Field(default=None),)
+    password: bool = (Field(default=None),)
     
     
