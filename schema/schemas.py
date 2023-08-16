@@ -9,7 +9,6 @@ def individual_serial_todo(todo) -> dict:
     
 def individual_serial_user(user) -> dict:
     return {
-        "id": str(user['_id']),
         "name": user['name'],
         'email': user['email'],
         'password': user['password']
