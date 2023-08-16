@@ -6,6 +6,7 @@ uri = "mongodb+srv://xmeix:xmeix911@cluster0.zhtofdq.mongodb.net/?retryWrites=tr
 client = MongoClient(uri)
 
 
-db = client.todo_db
+db = client.todo_database
 
-collection_name = db["todo_collection"]
+todos_collection = db["todos"]
+users_collection = db["users"]
